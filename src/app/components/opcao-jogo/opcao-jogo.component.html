@@ -1,0 +1,9 @@
+<section class="opcao-jogo-box">
+  <mat-radio-group
+    class="opcao-jogo-box-radio-group"
+    [(ngModel)]="jogoSelecionado">
+    <mat-radio-button class="opcao-jogo-box-radio-group-button" *ngFor="let jogo of jogos" [value]="jogo">
+      {{jogo.nome}}
+    </mat-radio-button>
+  </mat-radio-group>
+</section>
